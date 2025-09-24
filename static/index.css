@@ -266,3 +266,109 @@
     color: #00000083;
     width:90%;
  }
+ .page4{
+    height: 200vh;
+    width: 100%;
+   margin-top: 50px;
+   display: flex;
+  }
+  .page4-div1{
+    width: 60%;
+    background-color: rgba(255, 0, 170, 0.144);
+    height: 120%;
+    margin-top: 10%;
+    border-radius: 50%;
+    margin-left: 75%;
+    position: absolute;
+  }
+  .card-div-m h2{
+    margin-left: 8%;
+    margin-top: 13%;
+    font-size: 65px;
+  }
+  .cards1 {
+    display: flex;
+    justify-content: center;     
+    align-items: stretch; 
+    width: 100%;
+    height: 32%;
+    gap: 20px;
+    margin-top: 5%;
+  }
+  .cards2 {
+    display: flex;
+    justify-content: center;     
+    align-items: stretch; 
+    width: 100%;
+    height: 32%;
+    gap: 20px;
+    margin-top: 3%;
+  }
+
+  .card {
+    width: 27%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    border-radius: 15px;
+  }
+  .card1{
+    background-image: url("img/page4-img1.jpeg");
+  }
+  .card2{
+    background-image: url("img/page4-img2.jpeg");
+  }
+  .card3{
+    background-image: url("img/page4-img3.jpeg");
+  }
+  .card4{
+    background-image: url("img/page4-img1.jpeg");
+  }
+  .card5{
+    background-image: url("img/page4-img1.jpeg");
+  }
+  .card6{
+    background-image: url("img/page4-img1.jpeg");
+  }
+
+  .card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(15,23,42,0.18);
+  }
+
+  /* subtle dark overlay so white text is readable */
+  .card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(to top, rgba(0,0,0,0.45), rgba(0,0,0,0.08));
+    z-index: 2;
+  }
+
+  .card-content{
+    position: relative;
+    z-index: 3;
+    padding: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: none;
+  }
+
+  .card-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.2px;
+  }
+
+  .card-text{
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
+  }
