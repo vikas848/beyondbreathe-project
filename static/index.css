@@ -328,13 +328,13 @@
     background-image: url("img/page4-img3.jpeg");
   }
   .card4{
-    background-image: url("img/page4-img1.jpeg");
+    background-image: url("img/page4-img4.jpeg");
   }
   .card5{
-    background-image: url("img/page4-img1.jpeg");
+    background-image: url("img/page4-img5.jpeg");
   }
   .card6{
-    background-image: url("img/page4-img1.jpeg");
+    background-image: url("img/page4-img6.jpeg");
   }
 
   .card:hover{
@@ -371,4 +371,15 @@
     margin: 0;
     font-size: 0.95rem;
     opacity: 0.95;
+  }
+  .try-btn2{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color:  rgb(0, 68, 255);
+    border: none;
+    color: white;
+    margin-top: 60px;
+    margin-left: 95px;
   }
