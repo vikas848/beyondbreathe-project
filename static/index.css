@@ -7,7 +7,7 @@
     overflow-x: hidden;
   }
   
-  .container {
+  .containerr {
     height: 100vh;
     width: 100%;
     background-image: url("img/laptop.jpeg");
@@ -28,7 +28,7 @@
     z-index: 1;
   }
   
-  .navbar {
+  .page1-navbar {
     height: 60px;
     width: 100%;
     /* background-color: rgb(245, 165, 165); */
@@ -41,27 +41,20 @@
     font-size: 20px;
     font-family: Arial, sans-serif;
   }
-  .navbar h4{
+  .page1-navbar h4{
     margin-left: 20%;
     font-size: 18px;
     color: white;
   }
-  .dropdown {
+  .page1-dropdown {
     position: relative;
     
   }
-  .dropdown a {
+  .page1-dropdown a {
     color: white;
     margin-left: 20px;
   }
-
-
-  /* .dropdown > a {
-    cursor: pointer;
-  } */
-
-  /* Dropdown menu */
-  .dropdown-content {
+  .page1-dropdown-content {
     display: none;
     position: absolute;
     background: white;
@@ -72,18 +65,18 @@
     padding: 10px 0;
   }
 
-  .dropdown:hover .dropdown-content {
+  .page1-dropdown:hover .page1-dropdown-content {
     display: block;
   }
 
-  .dropdown-content h4 {
+  .page1-dropdown-content h4 {
     margin: 8px 15px 4px;
     font-size: 12px;
     color: rgb(128, 128, 128);
     text-transform: uppercase;
   }
 
-  .dropdown-content a {
+  .page1-dropdown-content a {
     display: block;
     padding: 8px 15px;
     color: #333;
@@ -92,18 +85,18 @@
     margin-left: 20px;
   }
 
-  .dropdown-content a:hover {
+  .page1-dropdown-content a:hover {
     background:rgb(0, 68, 255);
     color: white;
   }
 
-  .dropdown-content hr {
+  .page1-dropdown-content hr {
     margin: 6px 0;
     border: none;
     border-top: 1px solid #ccc;
   }
 
-  .login-btn{
+  .page1-login-btn{
     height: 40px;
     width: 100px;
     border-radius: 50px;
@@ -113,7 +106,7 @@
     color: white;
     margin-left: 200px;
   }
-  .try-btn{
+  .page1-try-btn{
     height: 40px;
     width: 180px;
     border-radius: 50px;
@@ -142,7 +135,7 @@
     
   }
   
-  .try-3day-btn{
+  .page1-try-3day-btn{
     position: relative;
     z-index: 2;
     height: 60px;
@@ -156,6 +149,51 @@
     margin-left: 100px;
     margin-top: 20px;
   }
+  .feedback{
+    height: 200px;
+    width: 100%;
+  }
+  .slider {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 6.6%;
+}
+
+.slides .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* .color1 { 
+    background: rgba(0,0,0,0.5);
+}  
+.color2 {
+    background: rgba(0,0,0,0.5);
+}  
+.color3 {
+    background: rgba(0,0,0,0.5);
+}  */
+
+.slide.active {
+    display: block;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
   .page2{
     height: 140vh;
     width: 100%;

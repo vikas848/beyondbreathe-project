@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
+    <div class="page1-container">
+        <div class="page1-navbar">
             <h3>BEYONDBREATHEYOGA</h3>
             <h4>Pricing</h4>
-            <div class="dropdown">
+            <div class="page1-dropdown">
                 <a>About Us▼</a>
-                <div onclick="" class="dropdown-content">
+                <div onclick="" class="page1-dropdown-content">
                     <h4>Company</h4>
                     <a href="#">Our Mission</a>
                     <a href="#">Our Coaches</a>
@@ -32,8 +32,8 @@
                     <a href="#">Contact Us</a>
                 </div>
             </div>
-            <button class="login-btn">log in</button>
-            <button class="try-btn">Try For Free</button>
+            <button class="page1-login-btn">log in</button>
+            <button class="page1-try-btn">Try For Free</button>
 
         </div>
         <div class="page1">
@@ -42,8 +42,38 @@
         <div class="page1-line2">
             <h1>Balance Your Body & Mind with LIVE Personal Coaching</h1>
         </div>
-        <button class="try-3day-btn">Start your 3-day free trial</button>
+        <button class="page1-try-3day-btn">Start your 3-day free trial</button>
         <div class="container-blr"></div>
+    </div>
+    <div class="feedback">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active color1">vikas</div>
+                <div class="slide color2">singh</div>
+                <div class="slide color3">devil</div>
+            </div>
+        
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        
+        <script>
+            let slides = document.querySelectorAll(".slide");
+            let currentIndex = 0;
+        
+            document.querySelector(".next").addEventListener("click", function () {
+                slides[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add("active");
+            });
+        
+            document.querySelector(".prev").addEventListener("click", function () {
+                slides[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                slides[currentIndex].classList.add("active");
+            });
+        </script>
+         
     </div>
     <div class="page2">
         <div class="li-div">
